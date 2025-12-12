@@ -1,0 +1,25 @@
+                        ┌───────────────────────────┐
+                        │       abstractitem         │
+                        ├───────────────────────────┤
+                        │ - Name                     │
+                        │ - Rating                   │
+                        └───────────┬───────────────┘
+                                    │
+         ┌──────────────────────────┼─────────────────────────────┐
+         │                          │                             │
+┌──────────────────┐     ┌────────────────────┐      ┌────────────────────┐
+│    restaurant     │     │      FoodMenu      │      │     FoodItems      │
+├──────────────────┤     ├────────────────────┤      ├────────────────────┤
+│ - Location       │     │ - __FoodItems      │      │ - Price            │
+│ - __FoodMenu     │     └────────────────────┘      │ - Desc             │
+├──────────────────┤     │ + FoodItems() setter│      └────────────────────┘
+│ + FoodMenu()     │     └────────────────────┘
+└──────────────────┘
+
+User ----> stored in ----> UserData
+
+MainMenu --> FoodManager --> restaurant --> FoodMenu --> FoodItems
+
+MainMenu --> Cart --> Payment methods (Card / COD / UPI)
+
+Home --> LoginSys --> MainMenu
